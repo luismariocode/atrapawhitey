@@ -1,0 +1,48 @@
+@include layers(10);
+
+
+
+.layer-1 {
+  @include rabbit(450px, 60px, $refX:true);
+  @include layer--animation(3s,1s,ease-in-out)
+}
+
+.layer-2 {
+  @include rabbit(450px, 60px, $refX:false);
+  @include layer--animation(3s,3s,ease-in-out)
+}
+
+.layer-3 {
+  @include sofa(400px, 40px, $refX:false)
+}
+
+.layer-4 {
+  @include rabbit(300px, 30px, $refX:true);
+  @include layer--animation(2s,6s,ease-in-out)
+}
+
+.layer-5 {
+  @include sofa(250px, 20px, $refX:true);
+}
+
+.layer-6 {
+  @include rabbit(200px, 50px, $refX:false);
+  @include layer--animation(2s,7s,ease-out)
+}
+
+.layer-7 {
+  @include sofa(150px, 20px, $refX:false)
+}
+
+
+.layer-8 {
+  @include cushion(70px, 100px, $color-cushion2, 0deg, $refX:true, )
+}
+
+.layer-9 {
+  @include cushion(90px, 10px, $color-cushion1, 5deg, $refX:true, )
+}
+
+.layer-10 {
+  @include cushion(90px, 10px, $color-cushion1, -5deg, $refX:false, )
+}
